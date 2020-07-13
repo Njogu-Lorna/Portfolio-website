@@ -6,6 +6,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Adelaide's Portfolio Website</title>
         <link rel="stylesheet" href="style.css">
+        <script type="text/javascript" src="js.js"></script>
+        <link href='https://fonts.googleapis.com/css?family=Rum Raisin' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Charmonman' rel='stylesheet'>
             <header>
 
 <!--Navbar-->
@@ -68,41 +71,179 @@
 <!--Services-->       
         
         <section class="services" id="services">
-            <div class="container">
-                <div class="row full-screeen">
-                    <div class="about-content">
-                        <div class="block">
-                            <h1>Services</h1>
+            <style>
+                body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
 
-                        </div>
-                    </div>
-                </div>
-            </div>
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+            </style>
+            <h1>Services</h1>
+  <p>What I do.</p>
+</div>
+
+<h2 style="text-align:center">Services Offered</h2>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="" alt="" style="width:100%">
+      <div class="container">
+        <h2>Modelling</h2>
+        <p class="title"></p>
+        <p> lorem ipsum ipsum lorem.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="" alt="" style="width:100%">
+      <div class="container">
+        <h2>Photoshoots</h2>
+        <p class="title">Art Director</p>
+        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="" alt="" style="width:100%">
+      <div class="container">
+        <h2>Branding</h2>
+        <p class="title">Designer</p>
+        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+      </div>
+    </div>
+  </div>
+</div>
         </section>
 
 <!--Blog-->
 
         <section class="blog" id="blog">
-            <div class="container">
-                <div class="row full-screeen">
-                    <div class="about-content">
-                        <div class="block">
-                            <h1>Blog</h1>
+            <style>
 
-                        </div>
-                    </div>
+            </style>
+            <div class="row">
+                <div class="column">
+                  <img src="images/A.jpg">
+                  <img src="images/about-me.jpg">
+                  <img src="images/B.jpg">
+                  <img src="images/c.jpg">
+                  <img src="images/DSC_8325.jpg">
+                  <img src="images/DSC_8351.jpg">
+                  <img src="images/DSC_8390.jpg">
                 </div>
-            </div>
+                <div class="column">
+                    <img src="images/A.jpg">
+                    <img src="images/about-me.jpg">
+                    <img src="images/B.jpg">
+                    <img src="images/c.jpg">
+                    <img src="images/DSC_8325.jpg">
+                    <img src="images/DSC_8351.jpg">
+                    <img src="images/DSC_8390.jpg">
+                </div>
+                <div class="column">
+                    <img src="images/A.jpg">
+                    <img src="images/about-me.jpg">
+                    <img src="images/B.jpg">
+                    <img src="images/c.jpg">
+                    <img src="images/DSC_8325.jpg">
+                    <img src="images/DSC_8351.jpg">
+                    <img src="images/DSC_8390.jpg">
+                </div>
+                <div class="column">
+                    <img src="images/A.jpg">
+                    <img src="images/about-me.jpg">
+                    <img src="images/B.jpg">
+                    <img src="images/c.jpg">
+                    <img src="images/DSC_8325.jpg">
+                    <img src="images/DSC_8351.jpg">
+                    <img src="images/DSC_8390.jpg">
+                </div>
+              </div>
         </section>
 
 <!--Contact-->
 
 <section class="contact" id="contact">
+    
     <div class="container">
-        <div class="row full-screeen">
-            <div class="about-content">
-                <div class="block">
-                    <h1>Contact Me</h1>
+        <div style="text-align:center">
+          <h2>Contact Us</h2>
+          <p>Visit , or leave a message:</p>
+        </div>
+        <div class="row">
+          <div class="column">
+            <img src="images/about-me.jpg" style="width:100%">
+          </div>
+          <div class="column">
+            <form action="/action_page.php">
+              <label for="fname">First Name</label>
+              <input type="text" id="fname" name="firstname" placeholder="Your name..">
+              <label for="lname">Last Name</label>
+              <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+              <label for="country">Country</label>
+              <select id="country" name="country">
+                <option value="Kenya">Kenya</option>
+                <option value="Tanzania">Tanzania</option>
+                <option value="Uganda">Uganda</option>
+              </select>
+              <label for="subject">Subject</label>
+              <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+              <input type="submit" value="Submit">
+            </form>
+          </div>
+        </div>
+      </div>
 
                 </div>
             </div>
