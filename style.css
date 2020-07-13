@@ -1,5 +1,5 @@
 body{
-    cursor: cell;
+    cursor: pointer;
     margin:0;
     font-family: 'Rum Raisin';font-size: 22px;
 }
@@ -237,21 +237,53 @@ header .navbar ul li a:active::before{
       margin-top: 0;
     }
   }
-  .blog .row {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 0 4px;
+  /* The grid: Four equal columns that floats next to each other */
+  .blog .column {
+    float: left;
+    width: 25%;
+    padding: 10px;
   }
   
-  /* Create two equal columns that sits next to each other */
- .blog .column {
-    flex: 50%;
-    padding: 0 4px;
-  }
-  
+  /* Style the images inside the grid */
   .blog .column img {
-    margin-top: 8px;
-    vertical-align: middle;
+    opacity: 0.8;
+    cursor: pointer;
     max-width: 100%;
   height: auto;
+  }
+  
+  .blog .column img:hover {
+    opacity: 1;
+  }
+  
+  /* Clear floats after the columns */
+  .blog .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* The expanding image container (positioning is needed to position the close button and the text) */
+  .blog  .container {
+    position: relative;
+    display: none;
+  }
+  
+  /* Expanding image text */
+  .blog #imgtext {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    color: white;
+    font-size: 20px;
+  }
+  
+  /* Closable button inside the image */
+  .blog .closebtn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
   }
