@@ -165,33 +165,127 @@ html {
 <!--Blog-->
 
         <section class="blog" id="blog">
-            <!-- The grid: four columns -->
-<div class="row">
-    <div class="column">
-      <img src="images/A.jpg" alt="Nature" onclick="myFunction(this);">
-    </div>
-    <div class="column">
-      <img src="images/B.jpg" alt="Snow" onclick="myFunction(this);">
-    </div>
-    <div class="column">
-      <img src="images/c.jpg" alt="Mountains" onclick="myFunction(this);">
-    </div>
-    <div class="column">
-      <img src="images/DSC_8325.jpg" alt="Lights" onclick="myFunction(this);">
-    </div>
+<!--slides-->
+<style>
+  * {
+    box-sizing: border-box
+  }
+  body {
+    margin: 0
+  }
+  .mySlides {
+    display: none
+  }
+  img {
+    vertical-align: middle;
+  }
+  .slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+  }
+  /* Caption text */
+  .text {
+    color:plum;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+ 
+  
+  /* Fading animation */
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 4.5s;
+    animation-name: fade;
+    animation-duration: 9.5s;
+  }
+  @-webkit-keyframes fade {
+    from {
+      opacity: 1
+    }
+    to {
+      opacity: 1
+    }
+  }
+  @keyframes fade {
+    from {
+      opacity: 1
+    }
+    to {
+      opacity: 1
+    }
+  }
+  /* On smaller screens, decrease text size */
+  @media only screen and (max-width: 300px) {
+    .prev,
+    .next,
+    .text {
+      font-size: 11px
+      
+    }
+  }
+</style>
+</head>
+<body>
+<div class="slideshow-container">
+  <div class="mySlides fade">
+    <img src="images/A.jpg" style="width:100%">
+    <div class="text">1</div>
   </div>
-  
-  <!-- The expanding image container -->
-  <div class="container">
-    <!-- Close the image -->
-    <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
-  
-    <!-- Expanded image -->
-    <img id="expandedImg" style="width:100%">
-  
-    <!-- Image text -->
-    <div id="imgtext"></div>
+  <div class="mySlides fade">
+    <img src="Images/about-me.jpg" style="width:100%">
+    <div class="text">2</div>
   </div>
+  <div class="mySlides fade">
+    <img src="Images/B.jpg" style="width:100%">
+    <div class="text">3</div>
+  </div>
+  <div class="mySlides fade">
+    <img src="Images/c.jpg" style="width:100%">
+    <div class="text">4</div>
+  </div>
+  <div class="mySlides fade">
+    <img src="Images/DSC_8325.jpg" style="width:100%">
+    <div class="text">5</div>
+  </div>
+  <div class="mySlides fade">
+    <img src="Images/DSC_8351.jpg" style="width:100%">
+    <div class="text">6</div>
+  </div>
+  <div class="mySlides fade">
+    <img src="Images/DSC_8390.jpg" style="width:100%">
+    <div class="text">7</div>
+    <div class="mySlides fade">
+      <img src="Images/Hero.jpg" style="width:100%">
+      <div class="text">8</div>
+    </div>
+    <div class="mySlides fade">
+      <img src="Images/DSC_8351.jpg" style="width:100%">
+      <div class="text">9</div>
+    </div>
+<br>
+
+<script>
+  var slideIndex = 0;
+  showSlides();
+  function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    for(i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if(slideIndex > slides.length) {
+      slideIndex = 1
+    }
+    slides[slideIndex - 1].style.display = "block";
+    setTimeout(showSlides, 5000); // Change image every 5 seconds
+  }
+</script>
         </section>
 
 <!--Contact-->

@@ -9,15 +9,16 @@ body{
     margin:0;
 }
 .container{
-    max-width: 1140px;
+    max-width: none;
     margin: auto;
 }
 .row{
     display: flex;
     flex-wrap:wrap;
+    max-width: none;
 }
 header{
-    position: fixed;
+    position: absolute;
     left:0px;
     right:0px;
     border-bottom: 1px solid rgb(231, 135, 8);
@@ -29,24 +30,26 @@ header .row{
     align-items: center;
 }
 header .brand-name  a{
-    font-family: 'Charmonman';font-size: 30px;
+    font-family: cursive;font-size: 50px;
     text-decoration: none;
     font-weight: 600;
-    font-size: 25px;
+    font-size: 50px;
     color: maroon;
     text-transform: uppercase;
-    position: relative;
+    position: right;
 }
 
    header .navbar ul{
     list-style: none;
     padding: 0;
-    margin:0;
+    margin-left:0;
+   
 }
 
 header .navbar ul li{
     display: inline-block;
     margin-left: 35px ;
+  
 }
 header .navbar ul li a{
     text-decoration:none;
@@ -180,32 +183,8 @@ header .navbar ul li a:active::before{
     min-height: 100vh;
 }
 
-
-
 .contact * {
     box-sizing: border-box;
-  }
-  
-  /* Style inputs */
-  .contact input[type=text], select, textarea {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    margin-top: 6px;
-    margin-bottom: 16px;
-    resize: vertical;
-  }
-  
-  .contact input[type=submit] {
-    background-color: #4CAF50;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    cursor: pointer;
-  }
-  
-  .contact input[type=submit]:hover {
-    background-color: #45a049;
   }
   
   /* Style the container/contact section */
@@ -237,53 +216,4 @@ header .navbar ul li a:active::before{
       margin-top: 0;
     }
   }
-  /* The grid: Four equal columns that floats next to each other */
-  .blog .column {
-    float: left;
-    width: 25%;
-    padding: 10px;
-  }
   
-  /* Style the images inside the grid */
-  .blog .column img {
-    opacity: 0.8;
-    cursor: pointer;
-    max-width: 100%;
-  height: auto;
-  }
-  
-  .blog .column img:hover {
-    opacity: 1;
-  }
-  
-  /* Clear floats after the columns */
-  .blog .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  
-  /* The expanding image container (positioning is needed to position the close button and the text) */
-  .blog  .container {
-    position: relative;
-    display: none;
-  }
-  
-  /* Expanding image text */
-  .blog #imgtext {
-    position: absolute;
-    bottom: 15px;
-    left: 15px;
-    color: white;
-    font-size: 20px;
-  }
-  
-  /* Closable button inside the image */
-  .blog .closebtn {
-    position: absolute;
-    top: 10px;
-    right: 15px;
-    color: white;
-    font-size: 35px;
-    cursor: pointer;
-  }
