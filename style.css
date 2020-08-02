@@ -162,7 +162,7 @@ header .navbar ul li a:active::before{
 }
 .about .about-content .block{
     margin: auto;
-    margin-top: 20%;
+    margin-top: 10%;
     flex: 0 0 75%;
     max-width:95%;
     padding: 35px;
