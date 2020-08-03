@@ -169,7 +169,7 @@ header .navbar ul li a:active::before{
     border: 5px solid peachpuff;
 }
 .services{
-    background-color:rgba(250, 88, 12, 0.979);
+    background-color:rgb(231, 135, 8);
     background-position: center;
     background-size: cover;
     min-height: 100vh;
