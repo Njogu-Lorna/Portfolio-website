@@ -11,6 +11,32 @@ body{
     box-sizing:border-box;
     margin:0;
 }
+@media screen and (max-width: 600px){
+    header .row{
+        justify-content: space-between;
+        align-items: center;
+        height: 40px;
+    }
+    header .brand-name  a{
+        font-family: cursive;font-size: 10px;
+        text-decoration: none;
+        font-weight: 20;
+        font-size: 20px;
+        color: maroon;
+        text-transform: uppercase;
+        position: right;
+    }
+    header .navbar ul li a{
+        text-decoration:none;
+        line-height: 50px;
+        color: maroon;
+        display:block;
+        font-weight: 60;
+        font-size: 10px;
+        position: relative;
+    }
+}
+
 .container{
     max-width: none;
     margin: auto;
@@ -32,15 +58,6 @@ header .row{
     justify-content: space-between;
     align-items: center;
     height: 80px;
-}
-header .brand-name  a{
-    font-family: cursive;font-size: 50px;
-    text-decoration: none;
-    font-weight: 60;
-    font-size: 50px;
-    color: maroon;
-    text-transform: uppercase;
-    position: right;
 }
 
    header .navbar ul{
