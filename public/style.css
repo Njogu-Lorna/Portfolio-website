@@ -171,7 +171,7 @@ header .navbar ul li a:active::before{
 .home .home-content .block{
     flex: 0 0 75%;
     max-width:75%;
-    padding-left: 35px;
+    padding-left: 32px;
     border-left: 5px solid peachpuff;
 }
 .home .home-content .block h6{
@@ -273,6 +273,8 @@ header .navbar ul li a:active::before{
     margin-top: 6px;
     padding: 20px;
   }
+  
+
   
   /* Clear floats after the columns */
   .contact .row:after {
