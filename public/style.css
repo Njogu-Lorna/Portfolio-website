@@ -149,6 +149,7 @@ header .navbar ul li a:active::before{
     min-height: 100vh;
     background-image: url("images/Hero.jpg");
     background-size: cover;
+    object-fit: scale-down;
     background-position: center;
 }
 .home .full-screen{
@@ -249,7 +250,11 @@ header .navbar ul li a:active::before{
     background-size: cover;
     min-height: 100vh;
 }
-
+img{
+    height: auto;
+    max-width: 100%;
+    object-fit: scale-down;
+}
 .contact * {
     box-sizing: border-box;
   }
